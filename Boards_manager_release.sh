@@ -10,7 +10,7 @@
 
 # Change these to match your repo
 PAOOWNER=felias-fogg     # Github owner of PyAvrOCD  
-AUTHOR=felias-fogg           # Github user name
+AUTHOR=felias-fogg       # Github user name
 REALAUTHOR=MCUdude       # real author
 REPOSITORY=MiniCore      # Github repo
 
@@ -88,7 +88,7 @@ jq -r                                    \
 --arg file_name   $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
-  "name": $repository,
+  "name": "MiniCore (GCC15)",
   "architecture": "avr",
   "version": $version,
   "category": "Contributed",
@@ -107,7 +107,7 @@ jq -r                                    \
     {
       "packager": "arduino",
       "name": "avr-gcc",
-      "version": "7.3.0-atmel3.6.1-arduino7"
+      "version": "15.1.0-microchip4.0.0-01"
     },
     {
       "packager": "MiniCore",
@@ -128,5 +128,5 @@ jq -r                                    \
 }' "package_${REALAUTHOR}_${REPOSITORY}_index.json.tmp" > "package_${REALAUTHOR}_${REPOSITORY}_index.json"
 
 # Remove files that's no longer needed
-rm -rf "$REPOSITORY-${DOWNLOADED_FILE#"v"}" "package_${REALAUTHOR}_${REPOSITORY}_index.json.tmp"
-
+rm -rf "$REPOSITORY-${DOWNLOADED_FILE#"v"}" "package_${REALAUTHOR}_${REPOSITORY}_index.json.tmp" "package_GCC15_${REPOSITORY}_index.json"
+cp "package_${REALAUTHOR}_${REPOSITORY}_index.json" "package_GCC15_${REPOSITORY}_index.json"
