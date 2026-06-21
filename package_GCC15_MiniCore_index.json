@@ -1,0 +1,272 @@
+{
+  "packages": [
+    {
+      "name": "MiniCore",
+      "maintainer": "MCUdude",
+      "websiteURL": "https://github.com/MCUdude/MiniCore",
+      "email": "",
+      "help": {
+        "online": "https://forum.arduino.cc/index.php?topic=412070"
+      },
+      "platforms": [
+        {
+          "name": "MiniCore (GCC15)",
+          "architecture": "avr",
+          "version": "3.2.0-gcc15a",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/MiniCore/MiniCore-3.2.0-gcc15a.tar.bz2",
+          "archiveFileName": "MiniCore-3.2.0-gcc15a.tar.bz2",
+          "checksum": "SHA-256:616ef9f62074484ccc0d0a7f088c094baf963c90cb1e032e33543ce64c9dd103",
+          "size": "3530896",
+          "boards": [
+            {
+              "name": "ATmega328/P/PA/A/PB"
+            },
+            {
+              "name": "ATmega168/P/PA/A/PB"
+            },
+            {
+              "name": "ATmega88/P/PA/A/PB"
+            },
+            {
+              "name": "ATmega48/P/PA/A/PB"
+            },
+            {
+              "name": "ATmega8"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "15.1.0-microchip4.0.0-01"
+            },
+            {
+              "packager": "MiniCore",
+              "name": "avrdude",
+              "version": "8.0-arduino.1"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "MiniCore",
+              "name": "avrocd-tools",
+              "version": "1.5.2"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "avrdude",
+          "version": "8.0-arduino.1",
+          "systems": [
+            {
+              "size": "1441658",
+              "checksum": "SHA-256:66ae53dac08b2db2f065d7b6b2f60ff62d2a85907613c7b2988fdd1922950b5d",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_ARMv6.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_ARMv6.tar.gz"
+            },
+            {
+              "size": "1565761",
+              "checksum": "SHA-256:031f212bdcb77e2ea13895f07ab4a0c254963f8f1bbd3b8797d3363a6a2e95e3",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_ARM64.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_ARM64.tar.gz"
+            },
+            {
+              "size": "1173108",
+              "checksum": "SHA-256:8a36cf441a3ce21622eb30b40f0b71d27864b30ea851cb795ae654ee10e2c132",
+              "host": "x86_64-apple-darwin12",
+              "archiveFileName": "avrdude_8.0-arduino.1_macOS_64bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_macOS_64bit.tar.gz"
+            },
+            {
+              "size": "1476932",
+              "checksum": "SHA-256:1d2edadb07e070fcd016e8c802e961e30bfa606c2db63625c930526e7044aaa6",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_64bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_64bit.tar.gz"
+            },
+            {
+              "size": "1452068",
+              "checksum": "SHA-256:622358355a17cb400060cffbe1f8fc2fd9cea2ee883ab1b7766fd8219e0fc0f9",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrdude_8.0-arduino.1_Linux_32bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Linux_32bit.tar.gz"
+            },
+            {
+              "size": "1890359",
+              "checksum": "SHA-256:833aa1a66a8e70cd597fcfdbd7e559a91a00eca1d7aa3be2ce9bcadf7ccb987c",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrdude_8.0-arduino.1_Windows_32bit.tar.gz",
+              "url": "http://downloads.arduino.cc/tools/avrdude_8.0-arduino.1_Windows_32bit.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avrocd-tools",
+          "version": "1.1.2",
+          "systems": [
+            {
+              "size": "1072",
+              "checksum": "SHA-256:16b2cd06eaaa91ea5d069ae48161227ae150d091c021aa0e02f7c33bb8a26e97",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrocd-tools-1.1.2-arm-linux-gnueabihf.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-arm-linux-gnueabihf.tar.gz"
+            },
+            {
+              "size": "36091285",
+              "checksum": "SHA-256:a2a9abc2911a54c4e5d04aa5df1273703e9572e351679849e8f7d64b5921ee7b",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.1.2-aarch64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-aarch64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "26894454",
+              "checksum": "SHA-256:3d1725213d9be6524fd646ab31c5851e9ee65f6197bbf64a79429a88bc51ba3a",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.1.2-x86_64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-x86_64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "36445182",
+              "checksum": "SHA-256:a0e6ebbe63c2e8cc82f65947c475ad70dff68c8e9847b0ca9dc122e170608d23",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.1.2-x86_64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-x86_64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "1077",
+              "checksum": "SHA-256:5e11ba4fcc83aa454bae316dff800240e7aab90231d86eac4edbe49e7dd6409b",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.1.2-i686-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-i686-linux-gnu.tar.gz"
+            },
+            {
+              "size": "17576320",
+              "checksum": "SHA-256:18923f647ee3949aa27e3c012e0a5c07ac39297a1254c8f54ae0428563d3638a",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avrocd-tools-1.1.2-x86_64-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-x86_64-mingw32.tar.gz"
+            },
+            {
+              "size": "25367532",
+              "checksum": "SHA-256:a1ba34ee64505f5cb18d848751b39ad7257a6cec5572ef9ee91e721ec04684e5",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.1.2-arm64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-arm64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "15585229",
+              "checksum": "SHA-256:21045379f18e2cd43157f90d562e76bb8d4ec3fd064149a17daa4f4ac10fc211",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrocd-tools-1.1.2-i686-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.1.2/avrocd-tools-1.1.2-i686-mingw32.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avrocd-tools",
+          "version": "1.5.2",
+          "systems": [
+            {
+              "size": "1061",
+              "checksum": "SHA-256:aee0d9453c70b29a11c7cadf8b858d3cab04de27526ba03767ed76583ca4a617",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrocd-tools-1.5.2-arm-linux-gnueabihf.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-arm-linux-gnueabihf.tar.gz"
+            },
+            {
+              "size": "48770054",
+              "checksum": "SHA-256:f8f97378c8a31ebecaf2198538a48eee18ec8cf38d33c2b753c3a4889a3e9787",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.5.2-aarch64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-aarch64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "37734244",
+              "checksum": "SHA-256:13b0738f44ebbf96fddc19a7ad1db14d03ed7ff95435d2df6f181f35ec8729e6",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.5.2-x86_64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-x86_64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "49256804",
+              "checksum": "SHA-256:f5d9bde14678b1950eb9a7b1dcc2f5494d08b8010c23b383f381a767a340bcd0",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.5.2-x86_64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-x86_64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "1069",
+              "checksum": "SHA-256:351bc45a00675265e263e8d53db811a22d5f1fa89dbbcec0a51d9ce362f271bd",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.5.2-i686-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-i686-linux-gnu.tar.gz"
+            },
+            {
+              "size": "29611988",
+              "checksum": "SHA-256:40cb457839189fdc5855470d4db2680c8ef017cb0a573c7629621b5714731bee",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avrocd-tools-1.5.2-x86_64-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-x86_64-mingw32.tar.gz"
+            },
+            {
+              "size": "36363894",
+              "checksum": "SHA-256:7b12c54be5db98cd82df97cd3d2bdf76a9037f136fd86cec0668ed9699f91da7",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.5.2-arm64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-arm64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "27509433",
+              "checksum": "SHA-256:4a51c6c4d121d94e77a4e923169ef72d1be12ff08084975eefb04b59c1b42997",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrocd-tools-1.5.2-i686-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.5.2/avrocd-tools-1.5.2-i686-mingw32.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avr-gcc",
+          "version": "15.1.0-microchip4.0.0-01",
+          "systems": [
+            {
+              "size": "116667759",
+              "checksum": "SHA-256:cc8682bb15f26428597499bf6e120832624a25b1062034a49fe0c77e4731cd33",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avr8-gnu-toolchain-4.0.0.52-linux.any.x86_64.tar.gz",
+              "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-4.0.0.52-linux.any.x86_64.tar.gz"
+            },
+            {
+              "size": "113604384",
+              "checksum": "SHA-256:ccc9712ca20edc713dcf101013f80ba245b418ebfb02fc98e9f44f7733fe086a",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avr8-gnu-toolchain-4.0.0.52-win32.any.x86_64.zip",
+              "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-4.0.0.52-win32.any.x86_64.zip"
+            },
+            {
+              "size": "204050783",
+              "checksum": "SHA-256:e6db3e9712ff85778384c2622859d737d23455e79e3362e8616a8ae836c772c1",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avr8-gnu-toolchain-4.0.0.52-darwin.any.universal.tar.gz",
+              "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-4.0.0.52-darwin.any.universal.tar.gz"
+            },
+            {
+              "size": "204050783",
+              "checksum": "SHA-256:e6db3e9712ff85778384c2622859d737d23455e79e3362e8616a8ae836c772c1",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avr8-gnu-toolchain-4.0.0.52-darwin.any.universal.tar.gz",
+              "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-4.0.0.52-darwin.any.universal.tar.gz"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
