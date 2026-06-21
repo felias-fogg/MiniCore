@@ -105,7 +105,7 @@ jq -r                                    \
   ],
   "toolsDependencies": [
     {
-      "packager": "arduino",
+      "packager": "MiniCore",
       "name": "avr-gcc",
       "version": "15.1.0-microchip4.0.0-01"
     },
