@@ -1,7 +1,18 @@
 # MiniCore
 [![MiniCore forum thread](https://img.shields.io/badge/support-forum-blue.svg)](https://forum.arduino.cc/index.php?topic=412070.0)
 
+------
+
+This is an experimental fork that features the new GCC 15.1 toolchain. If you like to try it out, add the following `additional boards manager URL` in the `Preferences` dialog:
+
+```
+https://felias-fogg.github.io/MiniCore/package_GCC15_MiniCore_index.json
+```
+
+------
+
 An Arduino core for the ATmega328, ATmega168, ATmega88, ATmega48 and ATmega8, all running the [Urboot](#write-to-own-flash) bootloader.  
+
 Arduino IDE v1.8 and v2.x supported!
 
 *From version 3.1.0 onwards, debugging in the Arduino IDE 2 is supported. You can use any of Microchip's EDBG-based hardware debuggers or the DIY debugger [dw-link](https://github.com/felias-fogg/dw-link). For documentation, see [https://pyavrocd.io](https://pyavrocd.io)*.
