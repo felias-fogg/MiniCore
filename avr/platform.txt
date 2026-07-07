@@ -5,7 +5,7 @@
 # https://arduino.github.io/arduino-cli/latest/platform-specification/
 
 name=MiniCore
-version=3.1.2
+version=3.1.3-pre1
 
 # AVR compile variables
 # ---------------------
@@ -152,6 +152,18 @@ tools.avrdude_remote.upload.pattern=/usr/bin/run-avrdude /tmp/sketch.hex {upload
 # - from numeric vendor ID, set to Unknown otherwise
 build.usb_manufacturer="Unknown"
 build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
+
+# Generating options.XXXX_flags using #pragma
+recipe.hooks.prebuild.1.pattern=/bin/bash "{runtime.platform.path}/scripts/pragma.sh" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" debug_flags
+recipe.hooks.prebuild.2.pattern=/bin/bash "{runtime.platform.path}/scripts/pragma.sh" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" release_flags
+recipe.hooks.prebuild.3.pattern=/bin/bash "{runtime.platform.path}/scripts/pragma.sh" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" cpp_flags
+recipe.hooks.prebuild.1.pattern.windows="{runtime.platform.path}\scripts\pragma.bat" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" debug_flags
+recipe.hooks.prebuild.2.pattern.windows="{runtime.platform.path}\scripts\pragma.bat" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" release_flags
+recipe.hooks.prebuild.3.pattern.windows="{runtime.platform.path}\scripts\pragma.bat" "{compiler.path}{compiler.cpp.cmd}" "{build.source.path}" "{build.path}" "{build.project_name}" cpp_flags
+
+# Generating launch.json file
+recipe.hooks.sketch.prebuild.1.pattern=/bin/bash "{runtime.platform.path}/scripts/launch.sh" "{build.source.path}" "{build.mcu}" "{build.path}/{build.project_name}.elf" "{runtime.tools.avrocd-tools.path}" "{runtime.tools.avr-gcc.path}" "{build.f_cpu}" "monitor debugwire enable" ""
+recipe.hooks.sketch.prebuild.1.pattern.windows="{runtime.platform.path}\scripts\launch.bat" "{build.source.path}" "{build.mcu}" "{build.path}\{build.project_name}.elf" "{runtime.tools.avrocd-tools.path}" "{runtime.tools.avr-gcc.path}" "{build.f_cpu}" "monitor debugwire enable" ""
 
 # Debugger configuration (general options)
 # ----------------------------------------
