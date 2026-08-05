@@ -174,6 +174,9 @@ debug.cortex-debug.custom.serverArgs.4=-F
 debug.cortex-debug.custom.serverArgs.5={build.f_cpu}
 debug.cortex-debug.custom.serverArgs.6=-m
 debug.cortex-debug.custom.serverArgs.7=all
+debug.cortex-debug.custom.serverArgs.8=--elf-file
+debug.cortex-debug.custom.serverArgs.9={debug.executable}
+
 debug.cortex-debug.custom.preLaunchCommands.0=monitor debugwire enable
 debug.cortex-debug.custom.runToEntryPoint=main
 debug.svd_file={debug.toolchain.path}/pyavrocd-util/svd/{build.mcu}.svd
